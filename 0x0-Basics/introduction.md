@@ -1,4 +1,4 @@
-# Introduction to what happens when you type Google.com and press Enter
+## Introduction to what happens when you type Google.com and press Enter
 
 ### 1. Initial Typing
 
@@ -51,3 +51,5 @@ TLS stands for Transfer Layer Security. To do the client hello, that first reque
 Before again sending the merged key the client aslo checks if it supports ALPN which is the Application Layer Protocol Negotiation(server name indications). It negotiates, tells the client in the server that it is going to up to communication with its HTTPS.
 
 In the same client hello, we also get the SNI which is the Server Name Indication, which indentifies the specific the domain you are trying to communicate with among many other domains over the internet.
+
+Then after all this, the client hello will be packed into an IP packet destined to 4.1.2.3, Port 443, source Port 2222, Source IP 10.0.0.2 do an ARP. We send it to the router because 44.1.1.2 is not there, change it to a public IP 4.1.2.4 send it over and finally 'Google.com' recieves the client hello.
