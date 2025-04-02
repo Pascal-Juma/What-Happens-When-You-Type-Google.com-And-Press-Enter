@@ -63,3 +63,5 @@ Now we have the certificate and other stuff as well we send it back to the route
 Now we are going to send a first HTTP request which is a get request. Now we are sending the get request, get slash, some headers, compress some header types.
 
 Assuming we are using HTTP2, having one TCP connection the client will build one stream of data, put headers along and compress it to a binary format.
+
+Then take the symmetric key encryption which it did from TLS and encrypt that piece of data and send it across the binary protocol.
