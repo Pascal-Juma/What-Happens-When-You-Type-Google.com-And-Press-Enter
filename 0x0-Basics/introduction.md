@@ -49,3 +49,5 @@ And assuming that a three way handshake happened, we now have a full connection 
 TLS stands for Transfer Layer Security. To do the client hello, that first request after the TCP connection, we are going to establish a public key and a private key in my client and merge them. 
 
 Before again sending the merged key the client aslo checks if it supports ALPN which is the Application Layer Protocol Negotiation(server name indications). It negotiates, tells the client in the server that it is going to up to communication with its HTTPS.
+
+In the same client hello, we also get the SNI which is the Server Name Indication, which indentifies the specific the domain you are trying to communicate with among many other domains over the internet.
