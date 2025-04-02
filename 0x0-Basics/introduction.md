@@ -53,3 +53,5 @@ Before again sending the merged key the client aslo checks if it supports ALPN w
 In the same client hello, we also get the SNI which is the Server Name Indication, which indentifies the specific the domain you are trying to communicate with among many other domains over the internet.
 
 Then after all this, the client hello will be packed into an IP packet destined to 4.1.2.3, Port 443, source Port 2222, Source IP 10.0.0.2 do an ARP. We send it to the router because 44.1.1.2 is not there, change it to a public IP 4.1.2.4 send it over and finally 'Google.com' recieves the client hello.
+
+'Google.com' generates its private key and merges it with the merged key and now we have three keys. This makes the symmetric key for the input called hash and it would go to the decided cipher. And then tell the server hello send it a certificate because now the client knows which host they want to connect to.
