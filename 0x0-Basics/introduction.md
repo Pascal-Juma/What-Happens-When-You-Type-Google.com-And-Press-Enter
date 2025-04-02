@@ -44,4 +44,7 @@ Since 4.1.2.3 is not in my subnet so i will the request through the gateway whic
 
 And assuming that a three way handshake happened, we now have a full connection between a client and 'Google.com' and we now have TCP connection.
 
-### 6. 
+### 6. TLS, ALPN, SNI
+
+TLS stands for Transfer Layer Security. To do the client hello, that first request after the TCP connection, we are going to establish a public key and a private key in my client and merge them. 
+
