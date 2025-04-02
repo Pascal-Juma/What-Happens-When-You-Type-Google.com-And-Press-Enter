@@ -65,3 +65,5 @@ Now we are going to send a first HTTP request which is a get request. Now we are
 Assuming we are using HTTP2, having one TCP connection the client will build one stream of data, put headers along and compress it to a binary format.
 
 Then take the symmetric key encryption which it did from TLS and encrypt that piece of data and send it across the binary protocol.
+
+The whole packet the stream receives at the server and the server recognises it as get request and now is up to the 'Google.com' to do the load balancer.
