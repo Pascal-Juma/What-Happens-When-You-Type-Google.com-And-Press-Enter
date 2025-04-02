@@ -67,3 +67,9 @@ Assuming we are using HTTP2, having one TCP connection the client will build one
 Then take the symmetric key encryption which it did from TLS and encrypt that piece of data and send it across the binary protocol.
 
 The whole packet the stream receives at the server and the server recognises it as get request and now is up to the 'Google.com' to do the load balancer.
+
+### 8. HTML Parsing
+
+If the content is HTML, the browser will automatically start parsing. If browsers dont see a content type they try to look at the body to infer what the content type might be. 
+
+If we 
