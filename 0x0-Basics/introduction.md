@@ -55,3 +55,5 @@ In the same client hello, we also get the SNI which is the Server Name Indicatio
 Then after all this, the client hello will be packed into an IP packet destined to 4.1.2.3, Port 443, source Port 2222, Source IP 10.0.0.2 do an ARP. We send it to the router because 44.1.1.2 is not there, change it to a public IP 4.1.2.4 send it over and finally 'Google.com' recieves the client hello.
 
 'Google.com' generates its private key and merges it with the merged key and now we have three keys. This makes the symmetric key for the input called hash and it would go to the decided cipher. And then tell the server hello send it a certificate because now the client knows which host they want to connect to.
+
+Now we have the certificate and other stuff as well we send it back to the router which is public as a NAT and change it back to 10.0.0.2,send it back, the server hello receives it and now the client has two private Keys and merges together and then generates the input which now it knows this agreed about cipher was EAS.
