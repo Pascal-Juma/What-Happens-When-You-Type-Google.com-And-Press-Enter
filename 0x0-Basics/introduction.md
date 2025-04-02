@@ -73,3 +73,5 @@ The whole packet the stream receives at the server and the server recognises it 
 If the content is HTML, the browser will automatically start parsing. If browsers dont see a content type they try to look at the body to infer what the content type might be. 
 
 If we have other content type to parse like CSS or JavaScript, we make an additional get request for those resources and HTTP 2 with do this with one TCP connection.
+
+Server recieves it and then start sending back the data.
