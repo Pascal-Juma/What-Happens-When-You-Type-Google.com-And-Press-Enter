@@ -56,4 +56,9 @@ Then after all this, the client hello will be packed into an IP packet destined 
 
 'Google.com' generates its private key and merges it with the merged key and now we have three keys. This makes the symmetric key for the input called hash and it would go to the decided cipher. And then tell the server hello send it a certificate because now the client knows which host they want to connect to.
 
-Now we have the certificate and other stuff as well we send it back to the router which is public as a NAT and change it back to 10.0.0.2,send it back, the server hello receives it and now the client has two private Keys and merges together and then generates the input which now it knows this agreed about cipher was EAS.
+Now we have the certificate and other stuff as well we send it back to the router which is public as a NAT and change it back to 10.0.0.2,send it back, the server hello receives it and now the client has two private Keys and merges together and then generates the input which now it knows this agreed about cipher was EAS. Both client and server have now the symmetry key.
+
+### 7. GET /
+
+Now we are going to send a first HTTP request which is a get request. Now we are sending the get request, get slash, some headers, compress some header types.
+
